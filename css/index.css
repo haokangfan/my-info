@@ -1,0 +1,723 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 100px;
+	color: white;
+}
+html,body,.main,.swiper-container,.swiper-slide{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.swiper-wrapper{
+	position: relative;
+}
+.page1{
+	height: 9.6rem;
+	background: url('../img/index-bg.jpg') no-repeat;	
+	background-size: 100% 100%;
+}
+.bg-shade{
+	width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.yuan{
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	padding: 0.1rem;
+	background-clip: content-box;
+	line-height: 2rem;
+	border: 0.05rem solid white;
+	background-color: #7D89E7;
+	border-radius: 50%;
+	text-align: center;
+	color:white;
+	font-size: 0.26rem;
+	left: 50%;
+	margin-left:-1rem;
+	top:1.94rem;
+	opacity: 0;
+}
+#page1 .yuan{
+	 -webkit-animation:pulse 1s linear 0s 1 both;
+    animation: pulse 1s linear 0s 1 both;
+}
+#page1 .left-1{
+	 -webkit-animation:fadeInLeft 1s linear 0.2s 1 both;
+    animation: fadeInLeft 1s linear 0.2s 1 both;
+}
+#page1 .left-2{
+	 -webkit-animation:fadeInLeft 1s linear 0.3s 1 both;
+    animation: fadeInLeft 1s linear 0.3s 1 both;
+}
+#page1 .text{
+	 -webkit-animation:bounceInUp 1s linear 0.4s 1 both;
+    animation: bounceInUp 1s linear 0.4s 1 both;
+}
+#page1 .right-2{
+	 -webkit-animation:bounceInRight 1s linear 0.5s 1 both;
+    animation: bounceInRight 1s linear 0.5s 1 both;
+}
+#page1 .right-1{
+	 -webkit-animation:bounceInRight 1s linear 0.6s 1 both;
+    animation: bounceInRight 1s linear 0.6s 1 both;
+}
+.line{
+	width: 0.35rem;
+	height: 0.27rem;
+	position: absolute;
+}
+.left-1,.left-2{
+	border-top: 0.05rem solid white;
+	border-left: 0.05rem solid white;
+	left: 0.8rem;
+	top: 4.8rem;
+	opacity: 0;
+}
+.left-2{
+	left: 0.9rem;
+	top: 4.9rem;
+}
+
+.text{
+	position: absolute;
+	width: 5.24rem;
+	height: 0.54rem;
+	line-height: 0.54rem;
+	text-align: center;
+	top:6.07rem;
+	font-size: 0.5rem;
+	left: 0.57rem;
+	opacity: 0;
+}
+.right-1,.right-2{
+	border-bottom: 0.05rem solid white;
+	border-right: 0.05rem solid white;
+	opacity: 0;
+}
+.right-1{
+	right: 0.34rem;
+	top: 7.02rem;
+}
+.right-2{
+	right: 0.47rem;
+	top: 6.9rem;
+}
+.angle{
+    position: fixed;
+    width: 0;
+    height: 0;
+    border-top:0.6rem solid white;
+    border-right: 0.42rem solid transparent;
+    border-left: 0.42rem solid transparent;
+    bottom: 0.25rem;
+    left: 50%;
+    margin-left:-0.5rem ;
+    z-index: 999;
+    opacity: 0;
+   	 -webkit-animation:bounce 1s linear 1.4s infinite both;
+    animation: bounce 1s linear 1.4s infinite both;
+}
+
+
+#page2 .top{
+	-webkit-animation:bounceInDown 1s linear 0s 1 both;
+    animation: bounceInDown 1s linear 0s 1 both;
+}
+#page2 .white-y{
+	-webkit-animation:bounceInDown 1s linear 0.2s 1 both;
+    animation: bounceInDown 1s linear 0.2s 1 both;
+}
+#page2 .line-c{
+	-webkit-animation:bounceInDown 1s linear 0.5s 1 both;
+    animation: bounceInDown 1s linear 0.5s 1 both;
+}
+#page2 .bottom-l{
+	-webkit-animation:bounceInLeft 1s linear 0.6s 1 both;
+    animation: bounceInLeft 1s linear 0.6s 1 both;
+}
+#page2 .left-info p:nth-child(1),#page2 .left-info p:nth-child(2){
+	-webkit-animation:bounceInLeft 1s linear 0.7s 1 both;
+    animation: bounceInLeft 1s linear 0.7s 1 both;
+}
+#page2 .right-info p:nth-child(1),#page2 .right-info p:nth-child(2){
+	-webkit-animation:bounceInRight 1s linear 0.7s 1 both;
+    animation: bounceInRight 1s linear 0.7s 1 both;
+}
+#page2 .right-info p:nth-child(3),#page2 .right-info p:nth-child(4){
+	-webkit-animation:bounceInRight 1s linear 0.8s 1 both;
+    animation: bounceInRight 1s linear 0.8s 1 both;
+}
+#page2 .left-info p:nth-child(3),#page2 .left-info p:nth-child(4){
+	-webkit-animation:bounceInLeft 1s linear 0.8s 1 both;
+    animation: bounceInLeft 1s linear 0.8s 1 both;
+}
+#page2 .right-info p:nth-child(5),#page2 .right-info p:nth-child(6){
+	-webkit-animation:bounceInRight 1s linear 0.9s 1 both;
+    animation: bounceInRight 1s linear 0.9s 1 both;
+}
+#page2 .left-info p:nth-child(5),#page2 .left-info p:nth-child(6){
+	-webkit-animation:bounceInLeft 1s linear 0.9s 1 both;
+    animation: bounceInLeft 1s linear 0.9s 1 both;
+}
+#page2 .right-info p:nth-child(7),#page2 .right-info p:nth-child(8){
+	-webkit-animation:bounceInRight 1s linear 1s 1 both;
+    animation: bounceInRight 1s linear 1s 1 both;
+}
+#page2 .left-info p:nth-child(7),#page2 .left-info p:nth-child(8){
+	-webkit-animation:bounceInLeft 1s linear 1s 1 both;
+    animation: bounceInLeft 1s linear 1s 1 both;
+}
+
+
+
+.page2{
+	background: #D6D6D6;
+}
+.page2 .top{
+	width: 100%;
+	position: absolute;
+	height: 4rem;
+	background: url(../img/page2-bg.jpg) no-repeat;
+	top: -2rem;
+	border-radius: 50%;
+	opacity: 0;
+}
+.white-y{
+	position: absolute;
+	width: 2.15rem;
+	height: 2.15rem;
+	border-radius: 50%;
+	background: white;
+	top:1.2rem;
+	left: 50%;
+	margin-left:-1.07rem;
+	z-index: 1;
+	background: url(../img/my.jpg) no-repeat 47% 100%;
+	background-size: 100% 100%;
+	opacity: 0;
+}
+.line-c{
+	position: absolute;
+	height: 5rem;
+	width: 0.52rem;
+	background: url(../img/m.gif) no-repeat 70% 100%;
+	left: 50%;
+	top:2.2rem;
+	margin-left:-0.24rem;
+	opacity: 0;
+}
+.left-info{
+	position: absolute;
+	width: 1.84rem;
+	height: 2.69rem;
+	left: 0.9rem;
+	top: 3rem;
+	font-size: 0.3rem;
+	color: black;
+	
+}
+.left-info p,.right-info p{
+	opacity: 0;
+}
+.right-info{
+	position: absolute;
+	width: 1.84rem;
+	height: 2.69rem;
+	right: 0.5rem;
+	top: 3rem;
+	font-size: 0.3rem;
+	color: black;
+}
+.page2 p{
+	margin-top: 0.3rem;
+}
+.page2 p span:last-child{
+	font-size: 0.2rem;
+}
+.bottom-l{
+	position: absolute;
+	width: 2.05rem;
+	height: 1.96rem;
+	background:url("../img/left-bom.gif");
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+}
+
+
+
+
+
+#page3 .left-header,#page3 .right-header{
+	-webkit-animation:bounceInDown 1s linear 0s 1 both;
+    animation: bounceInDown 1s linear 0s 1 both;
+}
+#page3 .center{
+	-webkit-animation:pulse 1s linear 0.1s 1 both;
+    animation: pulse 1s linear 0.1s 1 both;
+}
+#page3 .left-p{
+	-webkit-animation:bounceInLeft 1s linear 0.2s 1 both;
+    animation: bounceInLeft 1s linear 0.2s 1 both;
+}
+#page3 .j-text-1{
+	-webkit-animation:bounceInLeft 1s linear 0.3s 1 both;
+    animation: bounceInLeft 1s linear 0.3s 1 both;
+}
+#page3 .i1,#page3 .p3-right-2,#page3 .j-text-3{
+	-webkit-animation:bounceInLeft 1s linear 0.4s 1 both;
+    animation: bounceInLeft 1s linear 0.4s 1 both;
+}
+#page3 .i2,#page3 .left-03,#page3 .j-text-4{
+	-webkit-animation:bounceInLeft 1s linear 0.5s 1 both;
+    animation: bounceInLeft 1s linear 0.5s 1 both;
+}
+#page3 .i3{
+	-webkit-animation:bounceInLeft 1s linear 0.6s 1 both;
+    animation: bounceInLeft 1s linear 0.6s 1 both;
+}
+#page3 .i4{
+	-webkit-animation:bounceInLeft 1s linear 0.6s 1 both;
+    animation: bounceInLeft 1s linear 0.6s 1 both;
+}
+#page3 .j-text-2,#page3 .right-p{
+	-webkit-animation:bounceInRight 1s linear 0.3s 1 both;
+    animation: bounceInRight 1s linear 0.3s 1 both;
+}
+#page3 .j-text-5,#page3 .right-03{
+	-webkit-animation:bounceInRight 1s linear 0.4s 1 both;
+    animation: bounceInRight 1s linear 0.4s 1 both;
+}
+#page3 .j-text-6,#page3 .right-02{
+	-webkit-animation:bounceInRight 1s linear 0.5s 1 both;
+    animation: bounceInRight 1s linear 0.5s 1 both;
+}
+#page3 .bg03{
+	-webkit-animation:pulse 1s linear 0.5s 1 both;
+    animation: pulse 1s linear 0.5s 1 both;
+}
+#page3 .bottom{
+	-webkit-animation:bounceInUp 1s linear 0.6s 1 both;
+    animation: bounceInUp 1s linear 0.6s 1 both;
+}
+
+.left-header{
+	width: 4.68rem;
+	background: url(../img/1.gif) no-repeat 100% 100%;
+	background-size: 100% 100%;
+	height: 0.95rem;
+	float: left;
+	opacity: 0;
+}
+.right-header{
+	width: 1.72rem;
+	height: 1.61rem;
+	background: url(../img/2.gif) no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	opacity: 0;
+}
+.center{
+	width: 2.93rem;
+	height: 2.70rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -1.35rem;
+	margin-top: -1.465rem;
+	background: url(../img/center.gif) no-repeat center center;
+	background-size:109% 100%;
+	opacity: 0;
+}
+.left-p{
+	width: 1.67rem;
+	height: 1.41rem;
+	top:0.96rem;
+	left: 0.52rem;
+	position: absolute;
+	background: url(../img/01.gif) no-repeat center center;
+	background-size: 100% 100%;
+	opacity: 0;
+}
+.j-text-1{
+	width: 1.67rem;
+	height: 1.41rem;
+	top:1.2rem;
+	left: 0.82rem;
+	position: absolute;
+	font-size: 0.5rem;
+	opacity: 0;
+}
+.icon{
+	opacity: 0;
+	position: absolute;
+	background: #27F9E3;
+	border-radius: 50%;
+}
+.i1{
+	width: 0.37rem;
+	height: 0.31rem;
+	top:2.55rem;
+	left:0.73rem;
+}
+.i2{
+	width: 0.33rem;
+	height: 0.31rem;
+	top:2.55rem;
+	left:3.73rem;
+}
+.i3{
+	width: 0.33rem;
+	height: 0.31rem;
+	top:2.95rem;
+	right:0.73rem;
+	background:#836BE3;
+}
+.right-p{
+	width: 1.22rem;
+	height: 1.03rem;
+	background:url(../img/03.gif) no-repeat center center;
+	background-size: 100% 100%;
+	position: absolute;
+	top:1.73rem;
+	right: 1rem;
+	opacity: 0;
+}
+.j-text-2{
+    width: 1.67rem;
+    height: 1.41rem;
+    top: 1.78rem;
+    right: 0.4rem;
+    position: absolute;
+    font-size: 0.5rem;
+    opacity: 0;
+}
+.p3-right-2{
+	position: absolute;
+	width: 1.12rem;
+	height: 0.91rem;
+	background: url(../img/right2.gif) no-repeat center center;
+	background-size: 100% 100%;
+	left: 0.26rem;
+	top:3.81rem;
+	opacity: 0;
+}
+.j-text-3{
+	width: 1.12rem;
+	height: 0.91rem;
+   left: 0.3rem;
+	top:3.81rem;
+	line-height:0.91rem;
+    position: absolute;
+    font-size: 0.3rem;
+    opacity: 0;
+}
+.bg03{
+	position: absolute;
+	width: 1.38rem;
+	height: 1.18rem;
+	background: url(../img/bg03.gif) no-repeat center center;
+	background-size: 100% 100%;
+	left: 0;
+	bottom:2.99rem;
+	opacity: 0;
+	
+}
+.left-03{
+	position: absolute;
+	width: 1.97rem;
+	height: 1.82rem;
+	background: url(../img/left-03.gif) no-repeat center center;
+	background-size: 100% 100%;
+	left: 1.38rem;
+	bottom: 1.5rem;
+	opacity: 0;
+}
+.j-text-4{
+	position: absolute;
+	width: 1.97rem;
+	height: 1.82rem;
+	line-height: 1.82rem;
+	left: 1.98rem;
+	bottom: 1.5rem;
+	font-size: 0.5rem;
+	opacity: 0;
+}
+.right-03{
+	position: absolute;
+	width: 1.11rem;
+	height: 0.97rem;
+	background:url(../img/right-03.gif) no-repeat center center;
+	background-size: 100% 100%;
+	right: 0.51rem;
+	top:3.40rem;
+	opacity: 0
+}
+.j-text-5{
+	position: absolute;
+	width: 1.11rem;
+	height: 0.97rem;
+	line-height: 0.97rem;
+	right: 0.4rem;
+	top:3.40rem;
+	font-size: 0.3rem;
+	opacity: 0;
+}
+.right-02{
+	width: 1.61rem;
+	height: 1.47rem;
+	position: absolute;
+	right: 0.30rem;
+	bottom: 2.1rem;
+	background: url(../img/right-02.gif) center center;
+	background-size: 100% 100%;
+	opacity: 0;
+}
+.j-text-6{
+	width: 1.61rem;
+	height: 1.47rem;
+	position: absolute;
+	right: 0.08rem;
+	bottom: 1.8rem;
+	font-size: 0.5rem;
+	opacity: 0;
+}
+.bottom{
+	width: 100%;
+	height: 1.4rem;
+	position: absolute;
+	bottom: 0;
+	background: url(../img/bottom.gif) no-repeat center center;
+	background-size: 100% 100%;
+	opacity: 0;
+}
+.music{
+    position: absolute;
+    top: .2rem;
+    right: .2rem;
+    width: .6rem;
+    height: .6rem;
+    /*background: red;*/
+    background: url("../icon/music.svg");
+    background-size: 100% 100%;
+    z-index: 99;
+}
+.music.move{
+    -webkit-animation: musicMove 1s linear 0s infinite both;
+    animation: musicMove 1s linear 0s infinite both;
+}
+#musicMenu{
+    display: none;
+}
+.music audio{
+    display: none;
+}
+
+/*动画 */
+/*css3动画 animate*/
+@-webkit-keyframes musicMove {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);;
+    }
+}
+@keyframes musicMove {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);;
+    }
+}
+@keyframes pulse {
+  from {
+  	opacity: 0;
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+  	opacity: 1;
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+  	opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+  	opacity: 1;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+  	 opacity: 1;
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+  	 opacity: 1;
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+  	 opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes bounce {
+	2%{
+		opacity: 1;
+	}
+   20%, 53%, 80%{
+  	
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+  	
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+  	
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+  
+    transform: translate3d(0,-4px,0);
+  }
+  100%{
+  	opacity: 1;
+  }
+}
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+  	opacity: 1;
+    transform: none;
+  }
+}
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+  	opacity: 1;
+    transform: none;
+  }
+}
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+  	 opacity: 1;
+    transform: none;
+  }
+}
